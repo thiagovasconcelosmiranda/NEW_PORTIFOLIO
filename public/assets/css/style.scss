@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Quicksand, arial, sans-serif;
+
+}
+i{
+    transition: 0.4s;
+}
+i:hover{
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+body{
+    background-color: #000;
+}
+
+@import './partials/color';
+@import './partials/components';
+@import './partials/header';
+@import './partials/home';
+@import './partials/cards-projects';
+
+@import './partials/footer';
+
+::selection{
+    background-color: $red;
+    color: $white;
+}
+
