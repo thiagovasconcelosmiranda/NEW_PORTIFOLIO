@@ -1,3 +1,32 @@
+.buttons {
+    width: 100%;
+    justify-content: center;
+    padding: 30px 0;
+    gap: 30px;
+
+
+    .button {
+        color: $gray;
+        font-size: 20px;
+        cursor: pointer;
+        border-bottom: 5px solid transparent;
+        padding: 20px 10px;
+        transition: 0.4s;
+    }
+
+    .button:hover {
+        color: $red;
+        font-weight: bold;
+    }
+
+    .button-active {
+        border-color: $red;
+        color: $red;
+        font-weight: bold;
+    }
+}
+
+
 .projects {
     width: 100%;
     background-color: #000;
