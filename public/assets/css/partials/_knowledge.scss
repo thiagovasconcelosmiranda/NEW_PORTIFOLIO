@@ -1,0 +1,81 @@
+.knowledge {
+    gap: 20px;
+    padding: 10px 20px;
+    margin-top: 10%;
+
+
+    .knowledge-item {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .card {
+            width: 130px;
+            height: 130px;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            margin-left: 10px;
+
+            i,
+            p {
+                color: $white;
+            }
+
+            i {
+                font-size: 30px;
+            }
+
+            p {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.school {
+    width: 100%;
+    padding: 20px;
+    margin-top: 10%;
+
+    .school-item {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .school-card {
+            width: 550px;
+            background-color: #000;
+            display: flex;
+            padding: 30px;
+            border-radius: 10px;
+
+            .icon {
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: start;
+
+                i {
+                    color: $red;
+                    font-size: 40px;
+                }
+            }
+
+            .school-description {
+                p {
+                    color: $white;
+                    font-weight: 300;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+}
