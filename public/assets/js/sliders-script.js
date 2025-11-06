@@ -17,8 +17,6 @@
 
         const projectHTML = querySelector('.projects');
 
-        // getProject();
-
         function getProject(category = null) {
             projectHTML.innerHTML = '';
 
@@ -38,14 +36,15 @@
         }
 
         function createElement(item) {
+
             const div = document.createElement('div');
 
             div.classList.add('project-image');
+            div.classList.add(item.classBackground);
 
             div.setAttribute('id', item.id)
 
             if (item.style !== '') {
-
                 const list = item.style.split(' ');
 
                 list.forEach(element => {
@@ -56,6 +55,11 @@
             const img = document.createElement('img');
 
             img.src = `${item.image}`;
+            if (item.category == 'app') {
+                img.style.height = '100%';
+                img.style.objectFit = 'cover';
+            }
+
 
             div.appendChild(img);
 

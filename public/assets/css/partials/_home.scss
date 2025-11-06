@@ -10,13 +10,22 @@ main {
         .marca-dagua {
             width: 100%;
             position: absolute;
+            z-index: 80;
+            .transparent{
+                width: 100%;
+                height: 200px;
+                background-color: transparent;
+                z-index: 50;
+                position: absolute;
+                
+            }
 
             h1 {
                 font-size: 130px;
                 color: $gray;
                 text-align: center;
                 opacity: 0.1;
-                z-index: 1;
+                z-index: 99;
                 text-transform: uppercase;
             }
         }

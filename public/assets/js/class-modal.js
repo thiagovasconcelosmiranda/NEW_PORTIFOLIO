@@ -5,7 +5,6 @@ class Modal {
         const querySelector = (query, type = null) => {
 
             if (type) {
-
                 return type.querySelector(query);
             }
 
