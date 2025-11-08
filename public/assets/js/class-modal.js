@@ -24,16 +24,21 @@ class Modal {
         const project = querySelectorAll(classHtml);
 
         const modal = querySelector('.modal');
+        const nav = querySelector('.nav-item');
+        const body = querySelector('body');
 
         project.forEach(element => {
 
             element.addEventListener('click', () => {
-
+                body.style.overflowY = 'hidden';
                 modal.style.display = "flex";
+                nav.style.display = "none";
 
                 querySelector('.close-modal').addEventListener('click', () => {
 
                     modal.style.display = "none";
+                    nav.style.display = "flex";
+                    body.style.overflowY = 'scroll';
 
                 });
             });

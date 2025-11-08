@@ -1,5 +1,6 @@
 (function () {
     window.addEventListener('load', () => {
+
         const querySelector = (query, type = null) => {
             if (type)
                 return type.querySelector(query);
@@ -23,13 +24,10 @@
             projects.forEach(item => {
 
                 if (!category) {
-
                     createElement(item);
-
                 } else {
 
                     if (item.category == category)
-
                         createElement(item);
                 }
             });
@@ -95,13 +93,48 @@
                     return;
                 }
 
-
                 getProject(category);
-
             });
+            
             getProject();
         });
 
-    });
+        //Slider project modal
+        function sliderProject() {
 
+            const projectBody = querySelector('.project-body');
+            const sliders = querySelector('.sliders', projectBody);
+            const countSlider = querySelectorAll('.slider-group', sliders).length;
+            sliders.style.width = `calc(100vw * ${countSlider})`;
+            const sliderItem = querySelector('.slider-group');
+            const buttonLeft = querySelector('.button-left', projectBody);
+            const buttonRight = querySelector('.button-right', projectBody);
+
+            let count = 0;
+
+            buttonRight.addEventListener('click', () => {
+                count++;
+                slider();
+            });
+
+            buttonLeft.addEventListener('click', () => {
+                count--;
+                slider();
+            });
+
+            function slider() {
+                if (count > countSlider - 1) {
+                    count = 0;
+                } else if (count < 0) {
+                    count = countSlider - 1;
+                }
+                const widthSlider = sliderItem.clientWidth + 30;
+                console.log(widthSlider)
+                sliders.style.marginLeft = -widthSlider * count + 'px'
+            }
+        }
+
+        sliderProject();
+
+    });
 }());

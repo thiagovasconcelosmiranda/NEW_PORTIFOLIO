@@ -1,7 +1,5 @@
 main {
     position: relative;
-    z-index: 80;
-
 
     .pag-item {
         height: auto;
@@ -10,14 +8,13 @@ main {
         .marca-dagua {
             width: 100%;
             position: absolute;
-            z-index: 80;
+            z-index: 20;
+            
             .transparent{
                 width: 100%;
                 height: 200px;
                 background-color: transparent;
-                z-index: 50;
-                position: absolute;
-                
+                position: absolute;                
             }
 
             h1 {
@@ -25,7 +22,6 @@ main {
                 color: $gray;
                 text-align: center;
                 opacity: 0.1;
-                z-index: 99;
                 text-transform: uppercase;
             }
         }
@@ -39,7 +35,6 @@ main {
 
             h3 {
                 color: #fff !important;
-                z-index: 2;
                 font-size: 40px;
             }
 
@@ -238,5 +233,13 @@ main {
             max-width: 100%;
         }
 
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        
     }
 }
