@@ -15,7 +15,7 @@ let projects = [
     },
     {
         id: 1,
-        description: "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
+        description: "site ecommerce, com foco em vendas de cosméticos (Avon, Boticário e muito mais). projeto conta com busca avançada de produto, proporcionando uma busca rápida para o usuário. Conta com sistema de authenticação, compras online, carrinho de compras, meus favoritos, e opção de pagamentos online (pix, boleto e cartão de credito), calculo de frete em tempo real.",
         linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-php', 'fa-brands/fa-git', 'fa-solid/fa-database'],
         video: '',
         image: '/assets/images/projects/cosmeticos.png',
@@ -28,7 +28,7 @@ let projects = [
     },
     {
         id: 2,
-        description: " Projeto para divugação de oculos de graus e sol. O sate conta com um designer moderno e leve para o usuúrio navegar.",
+        description: " Projeto para divugação de óculos de graus e sol. O sate conta com um designer moderno e leve para o usuúrio navegar.",
         linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-sass', 'fa-brands/fa-node', 'fa-brands/fa-git', 'fa-solid/fa-database'],
         video: '',
         image: '/assets/images/projects/otica.png',
