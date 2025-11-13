@@ -24,23 +24,21 @@
             projects.forEach(item => {
 
                 if (!category) {
-                    createElement(item);
+                    createElementProject(item);
                 } else {
 
                     if (item.category == category)
-                        createElement(item);
+                        createElementProject(item);
                 }
             });
         }
 
-        function createElement(item) {
+        function createElementProject(item) {
 
             const div = document.createElement('div');
 
             div.classList.add('project-image');
             div.classList.add(item.classBackground);
-
-            div.setAttribute('id', item.id)
 
             if (item.style !== '') {
                 const list = item.style.split(' ');
@@ -66,14 +64,11 @@
             divHover.innerHTML = item.title;
 
             divHover.classList.add('hover-info');
+            divHover.setAttribute('id', item.id)
 
             img.after(divHover);
 
             projectHTML.appendChild(div);
-
-            const modal = new Modal;
-
-            modal.viewModal('.projects .project-image');
         }
 
         querySelectorAll('.buttons .button').forEach(button => {
@@ -95,46 +90,182 @@
 
                 getProject(category);
             });
-            
+
             getProject();
         });
 
-        //Slider project modal
-        function sliderProject() {
 
-            const projectBody = querySelector('.project-body');
-            const sliders = querySelector('.sliders', projectBody);
-            const countSlider = querySelectorAll('.slider-group', sliders).length;
-            sliders.style.width = `calc(100vw * ${countSlider})`;
-            const sliderItem = querySelector('.slider-group');
-            const buttonLeft = querySelector('.button-left', projectBody);
-            const buttonRight = querySelector('.button-right', projectBody);
 
-            let count = 0;
-
-            buttonRight.addEventListener('click', () => {
-                count++;
-                slider();
+        //select project
+        querySelectorAll('.projects .project-image .hover-info').forEach(item => {
+            item.addEventListener('click', (e) => {
+                projects.forEach(project => {
+                    const id = project.id;
+                    if (e.target.id == id)
+                        createElementSlider(projects, id);
+                });
             });
 
-            buttonLeft.addEventListener('click', () => {
-                count--;
-                slider();
-            });
+        });
 
-            function slider() {
-                if (count > countSlider - 1) {
-                    count = 0;
-                } else if (count < 0) {
-                    count = countSlider - 1;
+
+        function createElementSlider(projects, id) {
+            const modal = querySelector('.modal');
+            modal.style.display = "flex";
+            modal.innerHTML = "";
+
+            const projectBody = document.createElement('div');
+            projectBody.classList.add('project-body');
+
+            const closeModal = document.createElement('div');
+            closeModal.classList.add('close-modal');
+
+            const i1 = document.createElement('i');
+            i1.classList.add('fa-solid');
+            i1.classList.add('fa-xmark');
+            closeModal.appendChild(i1);
+
+
+            projectBody.appendChild(closeModal)
+
+            const displaySlider = document.createElement('div');
+            displaySlider.classList.add('display-slider');
+
+            const sliders = document.createElement('div');
+            sliders.classList.add('sliders');
+            displaySlider.appendChild(sliders);
+
+            const buttonLeft = document.createElement('div');
+            buttonLeft.classList.add('button-left');
+            displaySlider.appendChild(buttonLeft);
+            const i5 = document.createElement('i');
+            i5.classList.add('fa-solid');
+            i5.classList.add('fa-angle-left');
+            buttonLeft.append(i5);
+
+            const buttonRight = document.createElement('div');
+            buttonRight.classList.add('button-right');
+            displaySlider.appendChild(buttonRight);
+            const i6 = document.createElement('i');
+            i6.classList.add('fa-solid');
+            i6.classList.add('fa-angle-right');
+            buttonRight.appendChild(i6);
+
+            projects.forEach(item => {
+
+                const sliderGroup = document.createElement('div');
+                sliderGroup.classList.add('slider-group');
+                sliderGroup.classList.add('row');
+                sliders.appendChild(sliderGroup);
+
+                const image = document.createElement('div');
+                image.classList.add('image');
+
+                const img = document.createElement('img');
+                img.src = item.image
+                image.appendChild(img);
+
+                sliderGroup.append(image);
+
+                const infoProject = document.createElement('div');
+                infoProject.classList.add('info-project');
+                image.after(infoProject);
+
+                const projectTitle = document.createElement('div');
+                projectTitle.classList.add('project-title');
+
+                const h1 = document.createElement('h1');
+                h1.innerHTML = projects[0].title;
+                projectTitle.appendChild(h1);
+                infoProject.appendChild(projectTitle);
+
+                const projectDescription = document.createElement('div');
+                projectDescription.classList.add('project-description');
+
+                const projectIcons = document.createElement('div');
+                projectIcons.classList.add('protect-icons');
+                item.linguas.forEach(ling => {
+                    const icon = document.createElement('div');
+                    icon.classList.add('icon');
+                    const i4 = document.createElement('i');
+                    const listLing = ling.split('/');
+                    i4.classList.add(listLing[0]);
+                    i4.classList.add(listLing[1]);
+
+                    icon.appendChild(i4);
+                    projectIcons.appendChild(icon);
+                });
+
+                const p = document.createElement('p');
+                p.innerHTML = item.description;
+
+                const buttonLink = document.createElement('div');
+                buttonLink.classList.add('button-link');
+                buttonLink.classList.add('button-red');
+                if (item.link != '') {
+                    const a1 = document.createElement('a');
+                    a1.href = item.link;
+                    a1.innerHTML = item.title;
+                    buttonLink.appendChild(a1);
                 }
-                const widthSlider = sliderItem.clientWidth + 30;
-                console.log(widthSlider)
-                sliders.style.marginLeft = -widthSlider * count + 'px'
-            }
-        }
 
-        sliderProject();
+                if (item.github !== '') {
+                    const a2 = document.createElement('a');
+                    a2.href = item.github;
+                    buttonLink.appendChild(a2);
+                    a2.innerHTML = 'Acessar no github';
+                }
+
+
+                projectDescription.appendChild(projectIcons);
+                projectDescription.appendChild(p);
+                projectDescription.appendChild(buttonLink);
+                infoProject.appendChild(projectDescription);
+            });
+
+            projectBody.appendChild(displaySlider);
+
+            modal.appendChild(projectBody);
+            sliderBody(id);
+
+            closeModal.addEventListener('click', () => {
+                id = 0;
+                modal.style.display = "none";
+            });
+
+            function sliderBody(id) {
+                console.log(id)
+                const countSlider = querySelectorAll('.slider-group', sliders).length
+                sliders.style.width = `calc(100vw * ${countSlider})`;
+                const sliderGroup = querySelector('.slider-group', sliders);
+                let count = id;
+
+                slider();
+
+                buttonLeft.addEventListener('click', () => {
+                    count--;
+                    slider();
+                });
+
+                buttonRight.addEventListener('click', () => {
+                    count++;
+                    slider();
+                });
+
+                function slider() {
+                    if (count > countSlider - 1) {
+                        count = 0;
+                    } else if (count < 0) {
+                        count = countSlider - 1;
+                    }
+                    const clientWidth = (sliderGroup.clientWidth) + 30;
+
+                    sliders.style.marginLeft = -clientWidth * count + 'px';
+                }
+
+            }
+
+        }
 
     });
 }());

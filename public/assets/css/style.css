@@ -53,6 +53,10 @@ a {
   width: 100%;
   display: flex;
 }
+.justify-center {
+  justify-content: center;
+}
+
 .width-80 {
   width: 80%;
 }
@@ -120,22 +124,6 @@ a {
   background-color: rgb(15, 15, 56);
 }
 
-.modal {
-  width: 100%;
-  height: 100vh;
-  background: #000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 99 !important;
-}
-
 @media (min-width: 700px) and (max-width: 1150px) {
   .container {
     width: 100%;
@@ -166,7 +154,7 @@ header .nav-item {
   display: flex;
   flex-direction: column;
   left: 0;
-  z-index: 2;
+  z-index: 10;
 }
 header .nav-item .image-user {
   width: 65%;
@@ -829,9 +817,25 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   font-size: 20px;
 }
 
+.modal {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99 !important;
+}
+
 .project-body {
   width: 80%;
-  height: auto;
+  height: 80vh;
   background-color: rgb(26, 28, 47);
   border-radius: 10px;
   position: relative;
@@ -895,13 +899,13 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
 }
 .project-body .display-slider {
   width: 90%;
-  height: auto;
+  height: 100vh;
   overflow: hidden;
   margin: auto;
 }
 .project-body .display-slider .sliders {
   width: 100vw;
-  height: auto;
+  height: 70vh;
   display: flex;
   gap: 30px;
   margin-left: 0px;
@@ -922,6 +926,9 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
 }
 .project-body .display-slider .sliders .slider-group .image img {
   width: 100%;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .project-body .display-slider .sliders .slider-group .info-project {
   max-width: 50%;

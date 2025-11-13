@@ -1,77 +1,83 @@
 
 let projects = [
     {
-        id: 1,
-        description: "Projeto loja virtual de vendas de cosméticos.",
-        linguas: ['HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'PHP', 'LARAVEL', 'MARIADB'],
+        id: 0,
+        description: "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
+        linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-php', 'fa-brands/fa-git', 'fa-solid/fa-database'],
         video: '',
         image: '/assets/images/objects/image5.jpg',
-        link: 'https://google.com.br/',
+        link: '',
         style: 'image-grid-col-2 image-grid-row-2',
         title: 'Aplicativo Mobile',
         category: 'app',
-        classBackground: 'rose'
+        classBackground: 'rose',
+        github: ''
+    },
+    {
+        id: 1,
+        description: "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
+        linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-php', 'fa-brands/fa-git', 'fa-solid/fa-database'],
+        video: '',
+        image: '/assets/images/projects/cosmeticos.png',
+        link: '',
+        style: '',
+        title: 'Site Web',
+        category: 'site',
+        classBackground: 'background-rose',
+        github: ''
     },
     {
         id: 2,
-        description: "Loja Virtual saúde cosmeticos.",
-        linguas: ['HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'PHP', 'LARAVEL', 'MARIADB'],
+        description: " Projeto para divugação de oculos de graus e sol. O sate conta com um designer moderno e leve para o usuúrio navegar.",
+        linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-sass', 'fa-brands/fa-node', 'fa-brands/fa-git', 'fa-solid/fa-database'],
         video: '',
-        image: '/assets/images/projects/cosmeticos.png',
-        link: 'https://google.com',
+        image: '/assets/images/projects/otica.png',
+        link: 'https://otica-node.vercel.app/',
         style: '',
-        title: 'Site web',
+        title: 'Site Web',
         category: 'site',
-        classBackground: 'background-rose'
+        classBackground: 'background-blue',
+        github: ''
     },
     {
         id: 3,
-        description: "Loja Virtual Ótica Center..",
-        linguas: ['HTML', 'CSS', 'JAVASCRIPT', 'React', 'MARIADB'],
-        video: '',
-        image: '/assets/images/projects/otica.png',
-        link: 'https://google.com',
-        style: '',
-        title: 'Site web',
-        category: 'site',
-        classBackground: 'background-blue'
-    },
-    {
-        id: 4,
-        description: "Aplicativo mobile.",
-        linguas: ['HTML', 'CSS', 'JAVASCRIPT', 'React', 'MARIADB'],
+        description: "Projeto desenvolvido para venda e divugação de receptores de satéites e IPTV. No site você encontra driver para atualização de equipamentos e vendas de pacotes.",
+        linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-sass', 'fa-brands/fa-node', 'fa-brands/fa-git', 'fa-solid/fa-database'],
         video: '',
         image: '/assets/images/projects/owflow.png',
-        link: 'https://google.com',
+        link: 'https://onflow-go-cod.vercel.app/',
         style: '',
-        title: 'Site web',
+        title: 'Site Web',
         category: 'site',
-        classBackground: 'background-blue'
+        classBackground: 'background-blue',
+        github: 'https://github.com/thiagovasconcelosmiranda/OnflowGo-Cod'
 
     },
     {
-        id: 5,
-        description: "Aplicativo mobile.",
-        linguas: ['HTML', 'CSS', 'JAVASCRIPT', 'React', 'MARIADB'],
+        id: 4,
+        description: "4 Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
+        linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-php', 'fa-brands/fa-git', 'fa-solid/fa-database'],
         video: '',
         image: '/assets/images/objects/image5.jpg',
-        link: 'https://google.com',
+        link: '',
         style: '',
         title: 'Site web',
         category: 'site',
-        background: '#542a52'
+        background: '#542a52',
+        github: ''
     },
     {
-        id: 6,
-        description: "Aplicativo mobile.",
-        linguas: ['HTML', 'CSS', 'JAVASCRIPT', 'React', 'MARIADB'],
+        id: 5,
+        description: " 5 Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
+        linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-php', 'fa-brands/fa-git', 'fa-solid/fa-database'],
         video: '',
         image: '/assets/images/objects/image6.jpg',
-        link: 'https://google.com',
+        link: '',
         style: 'image-grid-col-2 image-grid-row-2',
         title: 'Aplicativo Mobile',
         category: 'app',
-        background: '#542a52'
+        background: '#542a52',
+        github: ''
     }
 ];
 
