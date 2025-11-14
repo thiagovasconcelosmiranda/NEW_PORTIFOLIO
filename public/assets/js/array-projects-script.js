@@ -4,7 +4,7 @@ let projects = [
         id: 0,
         description: "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
         linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-php', 'fa-brands/fa-git', 'fa-solid/fa-database'],
-        video: '',
+        video: '/',
         image: '/assets/images/objects/image5.jpg',
         link: '',
         style: 'image-grid-col-2 image-grid-row-2',
@@ -17,7 +17,7 @@ let projects = [
         id: 1,
         description: "Site ecommerce, com foco em vendas de cosméticos (Avon, Boticário e muito mais). Projeto conta com busca avançada de produto, proporcionando uma busca rápida para o usuário. Conta com sistema de authenticação, compras online, carrinho de compras, meus favoritos, e opção de pagamentos online (pix, boleto e cartão de credito), calculo de frete em tempo real.",
         linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-php', 'fa-brands/fa-git', 'fa-solid/fa-database'],
-        video: '',
+        video: '/video-cosmeticos',
         image: '/assets/images/projects/cosmeticos.png',
         link: '',
         style: '',
@@ -37,7 +37,7 @@ let projects = [
         title: 'Site Web',
         category: 'site',
         classBackground: 'background-blue',
-        github: ''
+        github: 'https://github.com/thiagovasconcelosmiranda/otica_node'
     },
     {
         id: 3,
@@ -70,7 +70,7 @@ let projects = [
         id: 5,
         description: " 5 Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
         linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-php', 'fa-brands/fa-git', 'fa-solid/fa-database'],
-        video: '',
+        video: '/',
         image: '/assets/images/objects/image6.jpg',
         link: '',
         style: 'image-grid-col-2 image-grid-row-2',

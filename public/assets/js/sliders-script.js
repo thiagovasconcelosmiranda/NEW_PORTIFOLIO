@@ -206,14 +206,24 @@
                     const a1 = document.createElement('a');
                     a1.href = item.link;
                     a1.innerHTML = item.title;
+                    a1.setAttribute('target', '__blank');
                     buttonLink.appendChild(a1);
                 }
 
                 if (item.github !== '') {
                     const a2 = document.createElement('a');
                     a2.href = item.github;
+                    a2.setAttribute('target', '__blank');
                     buttonLink.appendChild(a2);
                     a2.innerHTML = 'Acessar no github';
+                }
+                
+                if (item.video != '') {
+                    const a3 = document.createElement('a');
+                    a3.href = '/video';
+                    a3.setAttribute('target', '__blank');
+                    buttonLink.appendChild(a3);
+                    a3.innerHTML = 'Assistir video';
                 }
 
 
