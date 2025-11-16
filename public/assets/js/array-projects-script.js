@@ -78,6 +78,19 @@ let projects = [
         category: 'app',
         background: '#542a52',
         github: ''
-    }
+    },
+    {
+        id: 6,
+        description: "Loja virtual ecommerce. Vendas de games e jogos.",
+        linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-php', 'fa-brands/fa-git', 'fa-solid/fa-database'],
+        video: 'video',
+        image: '/assets/images/projects/dc-games.png',
+        link: '',
+        style: '',
+        title: 'Loja Virtual DC Games',
+        category: 'site',
+        classBackground: 'background-blue',
+        github: ''
+    },
 ];
 

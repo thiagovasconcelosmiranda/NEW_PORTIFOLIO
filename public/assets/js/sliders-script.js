@@ -174,7 +174,7 @@
                 projectTitle.classList.add('project-title');
 
                 const h1 = document.createElement('h1');
-                h1.innerHTML = projects[0].title;
+                h1.innerHTML = item.title;
                 projectTitle.appendChild(h1);
                 infoProject.appendChild(projectTitle);
 
