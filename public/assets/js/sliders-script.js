@@ -22,7 +22,6 @@
             projectHTML.innerHTML = '';
 
             projects.forEach(item => {
-
                 if (!category) {
                     createElementProject(item);
                 } else {
@@ -35,16 +34,16 @@
 
         function createElementProject(item) {
 
-            const div = document.createElement('div');
+            const projectImage = document.createElement('div');
 
-            div.classList.add('project-image');
-            div.classList.add(item.classBackground);
+            projectImage.classList.add('project-image');
+            projectImage.classList.add(item.classBackground);
 
             if (item.style !== '') {
                 const list = item.style.split(' ');
 
                 list.forEach(element => {
-                    div.classList.add(element)
+                    projectImage.classList.add(element)
                 });
             }
 
@@ -56,8 +55,7 @@
                 img.style.objectFit = 'cover';
             }
 
-
-            div.appendChild(img);
+            projectImage.appendChild(img);
 
             const divHover = document.createElement('div');
 
@@ -68,7 +66,9 @@
 
             img.after(divHover);
 
-            projectHTML.appendChild(div);
+            projectHTML.appendChild(projectImage);
+            itemModal(projectImage)
+
         }
 
         querySelectorAll('.buttons .button').forEach(button => {
@@ -95,19 +95,18 @@
         });
 
 
+        function itemModal(project) {
+            //select project
 
-        //select project
-        querySelectorAll('.projects .project-image .hover-info').forEach(item => {
-            item.addEventListener('click', (e) => {
+            project.addEventListener('click', (e) => {
+
                 projects.forEach(project => {
                     const id = project.id;
                     if (e.target.id == id)
                         createElementSlider(projects, id);
                 });
             });
-
-        });
-
+        }
 
         function createElementSlider(projects, id) {
             const modal = querySelector('.modal');
@@ -217,10 +216,10 @@
                     buttonLink.appendChild(a2);
                     a2.innerHTML = 'Acessar no github';
                 }
-                
+
                 if (item.video != '') {
                     const a3 = document.createElement('a');
-                    a3.href = '/video';
+                    a3.href = `/projeto/video/${item.video}`;
                     a3.setAttribute('target', '__blank');
                     buttonLink.appendChild(a3);
                     a3.innerHTML = 'Assistir video';
@@ -244,12 +243,10 @@
             });
 
             function sliderBody(id) {
-                console.log(id)
                 const countSlider = querySelectorAll('.slider-group', sliders).length
                 sliders.style.width = `calc(100vw * ${countSlider})`;
                 const sliderGroup = querySelector('.slider-group', sliders);
                 let count = id;
-
                 slider();
 
                 buttonLeft.addEventListener('click', () => {
@@ -272,9 +269,7 @@
 
                     sliders.style.marginLeft = -clientWidth * count + 'px';
                 }
-
             }
-
         }
 
     });

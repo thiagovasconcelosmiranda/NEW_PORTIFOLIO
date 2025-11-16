@@ -1,5 +1,10 @@
 import { Request, Response } from "express";
 
 export const home = (req: Request, res: Response) => {
-   res.render('home');
+   const viewHeader = true;
+   const viewFooter = true;
+   
+   res.render('home', {
+      viewHeader, viewFooter
+   });
 }
