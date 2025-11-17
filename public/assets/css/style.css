@@ -828,7 +828,7 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   flex-wrap: wrap;
 }
 .school .school-item .school-card {
-  width: 550px;
+  width: 450px;
   background-color: #000;
   display: flex;
   padding: 30px;
