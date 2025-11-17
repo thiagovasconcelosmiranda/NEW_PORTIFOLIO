@@ -1,17 +1,21 @@
 .buttons {
     width: 100%;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 30px 0;
+    margin: auto;
     gap: 30px;
 
-
     .button {
+       
         color: $gray;
         font-size: 20px;
         cursor: pointer;
         border-bottom: 5px solid transparent;
         padding: 20px 10px;
         transition: 0.4s;
+        text-align: center;
     }
 
     .button:hover {
@@ -90,13 +94,47 @@
     }
 }
 
-@media (max-width: 1100px) {
+@media (min-width: 700px) and (max-width: 1350px) {
     .buttons {
         width: 100%;
+        padding: 30px 0;
+        gap: 30px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+
+        .button {
+            
+            color: $gray;
+            font-size: 20px;
+            cursor: pointer;
+            border-bottom: 5px solid transparent;
+            padding: 20px 10px;
+            transition: 0.4s;
+        }
+
+        .button:hover {
+            color: $red;
+            font-weight: bold;
+        }
+
+        .button-active {
+            border-color: $red;
+            color: $red;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .buttons {
+        width: 100%;
+        display: flex;
         justify-content: center;
         align-items: center;
         padding: 30px 0;
         gap: 30px;
+        margin: auto;
 
         .button {
             color: $gray;

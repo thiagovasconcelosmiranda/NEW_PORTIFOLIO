@@ -181,6 +181,7 @@
                 const projectDescription = document.createElement('div');
                 projectDescription.classList.add('project-description');
 
+
                 const projectIcons = document.createElement('div');
                 projectIcons.classList.add('protect-icons');
                 item.linguas.forEach(ling => {
@@ -197,6 +198,10 @@
 
                 const p = document.createElement('p');
                 p.innerHTML = item.description;
+                if (p.innerHTML.length >= 450) {
+                    projectDescription.style.overflowY = 'scroll';
+                    projectDescription.style.height = '300px';
+                }
 
                 const buttonLink = document.createElement('div');
                 buttonLink.classList.add('button-link');
