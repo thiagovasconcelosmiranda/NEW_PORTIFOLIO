@@ -97,7 +97,6 @@
 
         function itemModal(project) {
             //select project
-
             project.addEventListener('click', (e) => {
 
                 projects.forEach(project => {
@@ -263,6 +262,8 @@
                     count++;
                     slider();
                 });
+
+                window.addEventListener('resize', slider);
 
                 function slider() {
                     if (count > countSlider - 1) {

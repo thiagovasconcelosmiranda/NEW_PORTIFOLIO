@@ -10,9 +10,9 @@ header {
         z-index: 10;
 
         .image-user {
-            width: 65%;
+            width: 50%;
             height: 0;
-            padding: 30% 0;
+            padding: 25% 0;
             border: 5px solid $gray;
             display: flex;
             justify-content: center;
@@ -23,7 +23,7 @@ header {
             overflow: hidden;
 
             img {
-                width: 110%;
+                width: 115%;
             }
         }
 

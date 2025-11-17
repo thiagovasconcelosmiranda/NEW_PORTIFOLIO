@@ -157,9 +157,9 @@ header .nav-item {
   z-index: 10;
 }
 header .nav-item .image-user {
-  width: 65%;
+  width: 50%;
   height: 0;
-  padding: 30% 0;
+  padding: 25% 0;
   border: 5px solid gray;
   display: flex;
   justify-content: center;
@@ -170,7 +170,7 @@ header .nav-item .image-user {
   overflow: hidden;
 }
 header .nav-item .image-user img {
-  width: 110%;
+  width: 115%;
 }
 header .nav-item .user-info {
   padding: 20px 0;
@@ -1137,7 +1137,6 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   .project-body .display-slider .sliders .slider-group .image {
     width: 100%;
     display: flex;
-    justify-content: center;
   }
   .project-body .display-slider .sliders .slider-group .image img {
     width: 100%;
