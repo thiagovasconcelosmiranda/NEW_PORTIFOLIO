@@ -1122,11 +1122,13 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   }
   .project-body .display-slider {
     width: 100%;
-    overflow-y: scroll;
     height: 100%;
+    overflow-y: scroll;
+    max-height: 500px;
   }
   .project-body .display-slider .sliders {
     width: 100vw;
+    height: auto;
   }
   .project-body .display-slider .sliders .slider-group {
     width: 100vw;

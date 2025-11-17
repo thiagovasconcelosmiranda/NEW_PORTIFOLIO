@@ -323,11 +323,13 @@
 
     .display-slider {
       width: 100%;
-      overflow-y: scroll;
       height: 100%;
-
+      overflow-y: scroll;
+      max-height: 500px;
+    
       .sliders {
         width: 100vw;
+        height: auto;
 
         .slider-group {
           width: 100vw;
