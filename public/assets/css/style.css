@@ -794,7 +794,7 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   gap: 20px;
 }
 .knowledge .knowledge-item .card {
-  width: 130px;
+  width: 120px;
   height: 130px;
   background-color: #000;
   display: flex;
