@@ -1040,12 +1040,13 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   }
   .project-body .display-slider .sliders .slider-group {
     width: 100vw;
-    height: 80vw;
+    height: auto;
   }
   .project-body .display-slider .sliders .slider-group .image {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: start;
   }
   .project-body .display-slider .sliders .slider-group .image img {
     width: 100%;

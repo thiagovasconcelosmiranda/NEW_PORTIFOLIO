@@ -186,6 +186,7 @@
                 item.linguas.forEach(ling => {
                     const icon = document.createElement('div');
                     icon.classList.add('icon');
+                    icon.style.background = '#222';
                     const i4 = document.createElement('i');
                     const listLing = ling.split('/');
                     i4.classList.add(listLing[0]);

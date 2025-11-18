@@ -206,20 +206,20 @@
       width: 100%;
       height: 100%;
       overflow-y: scroll;
-     
+
 
       .sliders {
         width: 100vw;
 
         .slider-group {
           width: 100vw;
-          height: 80vw;
+          height: auto;
 
           .image {
             width: 100%;
             display: flex;
             justify-content: center;
-
+            align-items: start;
 
             img {
               width: 100%;
@@ -272,7 +272,7 @@
               p {
                 width: 100%;
                 color: #fff;
-               
+
               }
             }
 
@@ -326,7 +326,7 @@
       height: 100%;
       overflow-y: scroll;
       max-height: 500px;
-    
+
       .sliders {
         width: 100vw;
         height: auto;

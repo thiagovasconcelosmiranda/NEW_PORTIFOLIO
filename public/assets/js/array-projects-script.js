@@ -83,7 +83,7 @@ let projects = [
         id: 6,
         description: "Loja virtual ecommerce. Vendas de games e jogos.",
         linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-php', 'fa-brands/fa-git', 'fa-solid/fa-database'],
-        video: 'video',
+        video: 'dc_games.mp4',
         image: '/assets/images/projects/dc-games.png',
         link: '',
         style: '',
