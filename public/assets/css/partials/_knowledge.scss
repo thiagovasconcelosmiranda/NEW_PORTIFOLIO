@@ -39,7 +39,6 @@
 .school {
     width: 100%;
     padding: 20px;
-    margin-top: 10%;
 
     .school-item {
         width: 100%;
@@ -54,6 +53,7 @@
             display: flex;
             padding: 30px;
             border-radius: 10px;
+            transition:  0.4s;
 
             .icon {
                 padding: 10px;
@@ -76,6 +76,51 @@
                 }
             }
         }
+        .school-card:hover{
+            transform: scale(1.1);
+        }
     }
 
+}
+
+.pag-group {
+    padding: 20px;
+    margin-top: 10%;
+
+    .courses {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .course {
+            width: 300px;
+            background-color: #000;
+            padding: 20px;
+            border-radius: 10px;        
+            border: 2px solid $red;
+            transition: 0.4s;
+
+
+            .image {
+                img {
+                    width: 50px;
+                }
+            }
+
+            .course-description {
+                display: flex;
+                flex-direction: column;
+
+                h3,
+                p {
+                    margin-top: 5px;
+                    color: #fff;
+                }
+            }
+        }
+        .course:hover{
+            transform: scale(1.1);
+        }
+    }
 }

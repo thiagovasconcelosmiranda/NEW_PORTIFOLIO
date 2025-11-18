@@ -29,10 +29,24 @@ a {
 
     .col {}
 }
+strong{
+    color: $red;
+}
 
 .justify-center{
     justify-content: center;
 }
+
+.pag-group
+.course-title{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        h3{
+          color: $white;
+          font-size: 35px;
+        }
+    }
 
 .width-80 {
     width: 80%;
