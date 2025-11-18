@@ -17,7 +17,7 @@ let projects = [
         id: 1,
         description: "Site ecommerce, com foco em vendas de cosméticos (Avon, Boticário e muito mais). Projeto conta com busca avançada de produto, proporcionando uma busca rápida para o usuário. Conta com sistema de authenticação, compras online, carrinho de compras, meus favoritos, e opção de pagamentos online (pix, boleto e cartão de credito), calculo de frete em tempo real.",
         linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-php', 'fa-brands/fa-git', 'fa-solid/fa-database'],
-        video: 'videoplayback.mp4',
+        video: 'cosmeticos.mp4',
         image: '/assets/images/projects/cosmeticos.png',
         link: '',
         style: '',
