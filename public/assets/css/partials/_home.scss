@@ -1,6 +1,94 @@
 main {
     position: relative;
 
+
+    .banner {
+        overflow: hidden;
+        position: relative;
+        height: 100vh;
+
+
+        .banner-image {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            margin: auto;
+            background: linear-gradient(rgba(0, 0, 0, 0.7),
+                    rgba(0, 0, 0, 0.7)), url('../images/banner1.jpg');
+            background-repeat: none;
+            background-size: cover;
+            background-position: bottom;
+            display: flex;
+            transition: 4s;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner-info {
+            width: 80%;
+            height: auto;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            p,
+            h1 {
+                text-align: center;
+                color: #fff;
+                margin-bottom: 20px;
+
+            }
+
+            p {
+                font-size: 35px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 80px;
+                font-family: 'Sora', sans-serif;
+
+            }
+
+            .down {
+                position: absolute;
+                bottom: 50px;
+                animation: 2s animationDown infinite linear;
+                padding: 3% 0;
+
+                li a {
+                    padding: 30px;
+                    i {
+                        color: #fff;
+                        font-size: 30px;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+            @keyframes animationDown {
+                to {
+                    bottom: 50px;
+                }
+
+                from {
+                    bottom: 0px;
+
+                }
+            }
+
+        }
+    }
+
     .pag-item {
         height: auto;
         position: relative;
@@ -9,12 +97,12 @@ main {
             width: 100%;
             position: absolute;
             z-index: 20;
-            
-            .transparent{
+
+            .transparent {
                 width: 100%;
                 height: 200px;
                 background-color: transparent;
-                position: absolute;                
+                position: absolute;
             }
 
             h1 {
@@ -203,8 +291,6 @@ main {
                 }
             }
         }
-
-        
     }
 }
 
@@ -234,11 +320,11 @@ main {
         }
 
     }
-    .contact{
+
+    .contact {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;  
+        flex-direction: column;
     }
 }
-

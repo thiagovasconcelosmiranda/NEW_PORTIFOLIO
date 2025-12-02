@@ -1,12 +1,12 @@
 class Scroll {
     scrollToIdOnclick(event) {
-        let to = this.getScrollTopByHref(event.target);
+
+        let to = this.getScrollTopByHref(event);
         return this.scrollToPosition(to);
     }
 
     getScrollTopByHref(element) {
         const id = element.getAttribute('href');
-        console.log(document.querySelector(id).offsetTop);
         return document.querySelector(id).offsetTop;
     }
 

@@ -88,7 +88,7 @@ header {
             }
         }
 
-        #check-option{
+        #check-option {
             display: none;
         }
 
@@ -111,7 +111,7 @@ header {
 
             span:nth-child(1) {
                 top: 0;
-        
+
             }
 
             span:nth-child(2) {
@@ -121,102 +121,21 @@ header {
             span:nth-child(3) {
                 top: 16px;
             }
-            
-        }
-         #check-option:checked+label span:nth-child(1) {
-                transform: rotate(-45deg);
-                top: 8px;
-            }
 
-            #check-option:checked+label span:nth-child(2) {
-                opacity: 0;
-            }
-
-            #check-option:checked+label span:nth-child(3) {
-                transform: rotate(45deg);
-                top: 8px;
-            }
-    }
-
-    .banner {
-        overflow: hidden;
-        position: relative;
-        height: 100vh;
-
-
-        .banner-image {
-            width: 100%;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            margin: auto;
-            background: linear-gradient(rgba(0, 0, 0, 0.7),
-             rgba(0, 0, 0, 0.7)), url('../images/banner1.jpg');
-            background-repeat: none;
-            background-size: cover;
-            background-position: bottom;
-            display: flex;
-            transition: 4s;
-            justify-content: center;
-            align-items: center;
         }
 
-        .banner-info {
-            width: 80%;
-            height: auto;
-            display: flex;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+        #check-option:checked+label span:nth-child(1) {
+            transform: rotate(-45deg);
+            top: 8px;
+        }
 
-            p,
-            h1 {
-                text-align: center;
-                color: #fff;
-                margin-bottom: 20px;
+        #check-option:checked+label span:nth-child(2) {
+            opacity: 0;
+        }
 
-            }
-
-            p {
-                font-size: 35px;
-                margin-bottom: 20px;
-            }
-
-            h1 {
-                font-size: 80px;
-                font-family: 'Sora', sans-serif;
-
-            }
-
-            .down {
-                position: absolute;
-                bottom: 50px;
-                animation: 2s animationDown infinite linear;
-
-                i {
-                    color: #fff;
-                    font-size: 30px;
-                    cursor: pointer;
-                }
-            }
-
-            @keyframes animationDown {
-                to {
-                    bottom: 50px;
-                }
-
-                from {
-                    bottom: 0px;
-
-                }
-            }
-
+        #check-option:checked+label span:nth-child(3) {
+            transform: rotate(45deg);
+            top: 8px;
         }
     }
 }
