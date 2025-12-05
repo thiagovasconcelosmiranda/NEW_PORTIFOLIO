@@ -66,6 +66,7 @@ main {
 
                 li a {
                     padding: 30px;
+
                     i {
                         color: #fff;
                         font-size: 30px;
@@ -296,35 +297,47 @@ main {
 
 
 @media(max-width: 800px) {
-    body .pag-item {
-        height: auto;
-
-        .marca-dagua {
-            h1 {
-                font-size: 50px;
+    body {
+        .banner {
+            .banner-info {
+                h1 {
+                    font-size: 35px;
+                }
             }
         }
 
-        .pag-title {
-            margin-top: 8%;
+        .pag-item {
+            height: auto;
 
-            h3 {
-                color: #fff !important;
-                z-index: 2;
-                font-size: 30px;
+            .marca-dagua {
+                h1 {
+                    font-size: 50px;
+                }
             }
+
+            .pag-title {
+                margin-top: 8%;
+
+                h3 {
+                    color: #fff !important;
+                    z-index: 2;
+                    font-size: 30px;
+                }
+            }
+
+            .info-user .user-description {
+                max-width: 100%;
+            }
+
         }
 
-        .info-user .user-description {
-            max-width: 100%;
+
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
-
-    }
-
-    .contact {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }
 }

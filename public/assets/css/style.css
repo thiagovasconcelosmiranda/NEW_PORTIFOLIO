@@ -394,9 +394,6 @@ header .nav-item #check-option:checked + label span:nth-child(3) {
   header .nav-item .option {
     display: block;
   }
-  header .banner .banner-info h1 {
-    font-size: 35px;
-  }
 }
 main {
   position: relative;
@@ -635,6 +632,9 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
 }
 
 @media (max-width: 800px) {
+  body .banner .banner-info h1 {
+    font-size: 35px;
+  }
   body .pag-item {
     height: auto;
   }
@@ -652,7 +652,7 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   body .pag-item .info-user .user-description {
     max-width: 100%;
   }
-  .contact {
+  body .contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -804,18 +804,18 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
     flex-wrap: wrap;
   }
 }
-.knowledge {
+.knowledge-group {
   gap: 20px;
   padding: 10px 20px;
   margin-top: 10%;
 }
-.knowledge .knowledge-item {
+.knowledge-group .knowledge-item {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-.knowledge .knowledge-item .card {
+.knowledge-group .knowledge-item .card {
   width: 120px;
   height: 130px;
   background-color: #000;
@@ -826,14 +826,14 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   border-radius: 10px;
   margin-left: 10px;
 }
-.knowledge .knowledge-item .card i,
-.knowledge .knowledge-item .card p {
+.knowledge-group .knowledge-item .card i,
+.knowledge-group .knowledge-item .card p {
   color: #fff;
 }
-.knowledge .knowledge-item .card i {
+.knowledge-group .knowledge-item .card i {
   font-size: 30px;
 }
-.knowledge .knowledge-item .card p {
+.knowledge-group .knowledge-item .card p {
   margin-top: 10px;
 }
 
