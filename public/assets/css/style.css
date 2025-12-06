@@ -471,6 +471,7 @@ main .banner .banner-info .down li a i {
 main .pag-item {
   height: auto;
   position: relative;
+  overflow: hidden;
 }
 main .pag-item .marca-dagua {
   width: 100%;
