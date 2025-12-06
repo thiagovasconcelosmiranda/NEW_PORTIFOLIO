@@ -2,8 +2,9 @@
 (function () {
     window.addEventListener('load', () => {
         const scroll = new Scroll;
+        const links = document.querySelectorAll('ul .link a');
 
-        document.querySelectorAll('ul .link a').forEach(link => {
+        links.forEach(link => {
 
             link.addEventListener('click', (e) => {
                 const activeAll = document.querySelector('.active');
@@ -18,25 +19,19 @@
             });
         });
 
-          
 
-           
+        links.forEach(item => {
+            const href = item.href.split('#')[1];
+            if (href)
+                observeItem(href);
+        });
 
-            document.querySelectorAll('ul .link a').forEach(item => {
-                const href = item.href.split('#')[1];
-                console.log(item)
-                if(href)
+        function observeItem(href) {
 
-                    observeItem(href)
-                
-            });
-
-            function observeItem (href) {
-               
-               const section = document.querySelector(`#${href}`);
-               const dataLink = document.querySelector(`.${href}`)
-               console.log(section)
-               const observer = new IntersectionObserver((entries) => {
+            const section = document.querySelector(`#${href}`);
+            const dataLink = document.querySelector(`.${href}`)
+            
+            const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         dataLink.classList.add('active');
@@ -46,11 +41,11 @@
                 });
             }, { threshold: 0.5 });
             observer.observe(section);
-            
-        
-            }
 
-           
 
-        });
+        }
+
+
+
+    });
 }());
