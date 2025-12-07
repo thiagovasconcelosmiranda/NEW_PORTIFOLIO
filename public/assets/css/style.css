@@ -448,7 +448,7 @@ main .banner .banner-info h1 {
 }
 main .banner .banner-info .down {
   position: absolute;
-  bottom: 50px;
+  bottom: 10px;
   animation: 2s animationDown infinite linear;
   padding: 3% 0;
 }
@@ -538,6 +538,28 @@ main .pag-item .info-user .user-description h5 {
   color: #fff;
   font-size: 20px;
   margin-bottom: 20px;
+}
+main .pag-item .user-info-cards {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 0;
+}
+main .pag-item .user-info-cards .card-item {
+  padding-right: 20px;
+  border-right: 1px solid gray;
+}
+main .pag-item .user-info-cards .card-item h3 {
+  font-size: 20px;
+  color: #fff;
+}
+main .pag-item .user-info-cards .card-item .number, main .pag-item .user-info-cards .card-item span {
+  text-align: center;
+  font-size: 60px;
+  color: gray;
+  font-weight: 300;
 }
 main .pag-item .cards {
   padding: 20px 0;

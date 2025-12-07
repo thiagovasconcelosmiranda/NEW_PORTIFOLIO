@@ -59,7 +59,7 @@ main {
 
             .down {
                 position: absolute;
-                bottom: 50px;
+                bottom: 10px;
                 animation: 2s animationDown infinite linear;
                 padding: 3% 0;
 
@@ -168,6 +168,30 @@ main {
                     color: #fff;
                     font-size: 20px;
                     margin-bottom: 20px;
+                }
+            }
+        }
+        .user-info-cards{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 50px 0;
+        
+            .card-item{
+                padding-right: 20px;
+                border-right: 1px solid $gray;
+                h3{
+                    font-size: 20px;
+                    color: $white;
+
+                }
+               .number, span{
+                    text-align: center;
+                    font-size: 60px;
+                    color: $gray;
+                    font-weight: 300;
                 }
             }
         }
