@@ -462,7 +462,7 @@ main .banner .banner-info .down li a i {
 }
 @keyframes animationDown {
   to {
-    bottom: 50px;
+    bottom: 30px;
   }
   from {
     bottom: 0px;
