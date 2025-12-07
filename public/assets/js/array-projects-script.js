@@ -2,13 +2,13 @@
 let projects = [
     {
         id: 0,
-        description: "Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
-        linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-php', 'fa-brands/fa-git', 'fa-solid/fa-database'],
+        description: "Projeto em desenvolvimento em breve estará disponível.",
+        linguas: ['fa-brands/fa-react', 'fa-brands/fa-css3-alt', 'fa-brands/fa-git', 'fa-solid/fa-database'],
         video: '',
         image: '/assets/images/projects/mobile2.jpg',
         link: '',
         style: 'image-grid-col-2 image-grid-row-2',
-        title: 'Aplicativo Mobile',
+        title: 'Em desenvolvimento',
         category: 'app',
         classBackground: 'rose',
         github: ''
@@ -68,13 +68,13 @@ let projects = [
     },
     {
         id: 5,
-        description: " 5 Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.",
-        linguas: ['fa-brands/fa-html5', 'fa-brands/fa-css3-alt', 'fa-brands/fa-php', 'fa-brands/fa-git', 'fa-solid/fa-database'],
-        video: 'video.mp4',
+        description: "Projeto em desenvolvimento em breve estará disponível.",
+        linguas: ['fa-brands/fa-react', 'fa-brands/fa-css3-alt', 'fa-brands/fa-git', 'fa-solid/fa-database'],
+        video: '',
         image: '/assets/images/projects/mobile2.jpg',
         link: '',
         style: 'image-grid-col-2 image-grid-row-2',
-        title: 'Aplicativo Mobile',
+        title: 'Em desenvolvimento',
         category: 'app',
         background: '#542a52',
         github: ''
