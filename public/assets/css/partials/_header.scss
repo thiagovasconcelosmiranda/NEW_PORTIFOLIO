@@ -28,7 +28,7 @@ header {
         }
 
         .user-info {
-            padding: 20px 0;
+            padding: 5px 0;
 
 
             h3 {
@@ -40,13 +40,12 @@ header {
         nav {
             width: auto;
             height: 100%;
-
             ul li {
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 gap: 20px;
-                margin-top: 5%;
+                margin-top: 10px;
 
 
                 a {
