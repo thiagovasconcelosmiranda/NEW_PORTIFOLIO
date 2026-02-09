@@ -2,7 +2,7 @@
 let projects = [
     {
         id: 0,
-        description: "Projeto em desenvolvimento em breve estará disponível.",
+        description: "Projeto em desenvolvimento! Breve estará disponível.",
         linguas: ['fa-brands/fa-react', 'fa-brands/fa-css3-alt', 'fa-brands/fa-git', 'fa-solid/fa-database'],
         video: '',
         image: '/assets/images/projects/mobile2.jpg',
@@ -21,7 +21,7 @@ let projects = [
         image: '/assets/images/projects/cosmeticos.png',
         link: '',
         style: '',
-        title: 'Loja Virtual Saúde cosméticos',
+        title: 'Loja Virtual Saúde Cosméticos',
         category: 'site',
         classBackground: 'background-rose',
         github: ''
@@ -68,7 +68,7 @@ let projects = [
     },
     {
         id: 5,
-        description: "Projeto em desenvolvimento em breve estará disponível.",
+        description: "Projeto em desenvolvimento! Breve estará disponível.",
         linguas: ['fa-brands/fa-react', 'fa-brands/fa-css3-alt', 'fa-brands/fa-git', 'fa-solid/fa-database'],
         video: '',
         image: '/assets/images/projects/mobile2.jpg',

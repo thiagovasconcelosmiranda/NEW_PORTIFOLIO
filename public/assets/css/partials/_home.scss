@@ -43,7 +43,6 @@ main {
                 text-align: center;
                 color: #fff;
                 margin-bottom: 20px;
-
             }
 
             p {
@@ -280,7 +279,9 @@ main {
 
                         i,
                         h3 {
+                            font-weight: 400;
                             color: $white;
+                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                         }
 
                         i {

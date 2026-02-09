@@ -7,10 +7,10 @@ header {
         display: flex;
         flex-direction: column;
         left: 0;
-        z-index: 10;
+        z-index: 20;
 
         .image-user {
-            width: 50%;
+            width: 53%;
             height: 0;
             padding: 25% 0;
             border: 5px solid $gray;

@@ -172,10 +172,10 @@ header .nav-item {
   display: flex;
   flex-direction: column;
   left: 0;
-  z-index: 10;
+  z-index: 20;
 }
 header .nav-item .image-user {
-  width: 50%;
+  width: 53%;
   height: 0;
   padding: 25% 0;
   border: 5px solid gray;
@@ -631,7 +631,9 @@ main .pag-item .contact .contact-item address .contact-group {
 }
 main .pag-item .contact .contact-item address .contact-group i,
 main .pag-item .contact .contact-item address .contact-group h3 {
+  font-weight: 400;
   color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 main .pag-item .contact .contact-item address .contact-group i {
   font-size: 25px;
