@@ -17,7 +17,7 @@
         }
 
         const projectHTML = querySelector('.projects');
-        
+
         function getProject(category = null) {
             projectHTML.innerHTML = '';
 

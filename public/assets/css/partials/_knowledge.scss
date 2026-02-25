@@ -12,13 +12,15 @@
         .card {
             width: 120px;
             height: 130px;
-            background-color: #000;
+            background-color: $black;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             border-radius: 10px;
             margin-left: 10px;
+            transition: 0.4s;
+            border: 3px solid transparent;
 
             i,
             p {
@@ -32,6 +34,10 @@
             p {
                 margin-top: 10px;
             }
+        }
+        .card:hover{
+            transform: scale(1.1);
+            border-color: $red;
         }
     }
 }
@@ -54,6 +60,7 @@
             padding: 30px;
             border-radius: 10px;
             transition:  0.4s;
+            border: 3px solid transparent;
 
             .icon {
                 padding: 10px;
@@ -78,6 +85,7 @@
         }
         .school-card:hover{
             transform: scale(1.1);
+            border-color: $red;
         }
     }
 
@@ -95,10 +103,10 @@
 
         .course {
             width: 300px;
-            background-color: #000;
+            background-color: $black;
             padding: 20px;
             border-radius: 10px;        
-            border: 2px solid $red;
+            border: 3px solid transparent;
             transition: 0.4s;
 
 
@@ -106,7 +114,11 @@
                 img {
                     width: 50px;
                 }
+                img:hover{
+                opacity: 0.5;
             }
+            }
+            
 
             .course-description {
                 display: flex;
@@ -115,12 +127,13 @@
                 h3,
                 p {
                     margin-top: 5px;
-                    color: #fff;
+                    color: $white;
                 }
             }
         }
         .course:hover{
             transform: scale(1.1);
+            border-color: $red;
         }
     }
 }
