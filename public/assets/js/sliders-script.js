@@ -59,7 +59,7 @@
 
             const divHover = document.createElement('div');
 
-            divHover.innerHTML = item.title;
+            divHover.innerHTML = `<h3>${item.title}</h3>`;
 
             divHover.classList.add('hover-info');
             divHover.setAttribute('id', item.id)

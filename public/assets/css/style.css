@@ -751,7 +751,6 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   position: absolute;
   top: 0;
   transition: 0.8s;
-  color: #fff;
   display: none;
   justify-content: center;
   align-items: center;
@@ -759,6 +758,11 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   font-size: 20px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   cursor: pointer;
+}
+.projects .project-image .hover-info h3 {
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
 }
 .projects .project-image:hover .hover-info {
   display: flex;
