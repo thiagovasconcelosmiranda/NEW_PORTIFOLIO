@@ -94,7 +94,6 @@
 
 
         function itemModal(project) {
-
             //select project
             project.addEventListener('click', (e) => {
                 const elementId = querySelector('.hover-info', project).id;
@@ -133,6 +132,13 @@
 
             const sliders = document.createElement('div');
             sliders.classList.add('sliders');
+            
+            sliders.style.transition = "none";
+
+            setTimeout(() => {
+                sliders.style.transition = "1s";
+            }, 500);
+
             displaySlider.appendChild(sliders);
 
             const buttonLeft = document.createElement('div');
