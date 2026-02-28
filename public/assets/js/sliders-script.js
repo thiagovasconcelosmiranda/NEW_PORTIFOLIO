@@ -1,5 +1,5 @@
 (function () {
-    window.addEventListener('load', () => {
+    window.addEventListener('DOMContentLoaded', () => {
 
         const querySelector = (query, type = null) => {
             if (type)
@@ -70,9 +70,7 @@
             itemModal(projectImage)
 
         }
-
         querySelectorAll('.buttons .button').forEach(button => {
-
             button.addEventListener('click', (e) => {
 
                 const category = e.target.getAttribute('data-category');
@@ -96,14 +94,18 @@
 
 
         function itemModal(project) {
+
             //select project
             project.addEventListener('click', (e) => {
+                const elementId = querySelector('.hover-info', project).id;
+                projects.forEach(item => {
 
-                projects.forEach(project => {
-                    const id = project.id;
-                    if (e.target.id == id)
-                        createElementSlider(projects, id);
+                    if (elementId == item.id)
+
+                        createElementSlider(projects, elementId);
+
                 });
+
             });
         }
 
