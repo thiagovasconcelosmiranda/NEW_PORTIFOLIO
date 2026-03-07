@@ -26,6 +26,7 @@ i:hover{
 
 body{
     background-color: #000;
+    overflow: hidden;
 }
 
 @import './partials/color';
@@ -37,6 +38,7 @@ body{
 @import './partials/modal';
 @import './partials/footer';
 @import './partials/whatsapp';
+@import './partials//reload';
 
 
 ::selection{

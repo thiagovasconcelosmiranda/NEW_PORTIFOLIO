@@ -1,6 +1,6 @@
 
 (function () {
-    window.addEventListener('load', () => {
+    window.addEventListener('DOMContentLoaded', () => {
         const scroll = new Scroll;
         const links = document.querySelectorAll('.link a');
 
@@ -49,9 +49,10 @@
 
                 window.addEventListener('scroll', () => {
                     const position = window.scrollY;
-
-                    if (position > 805.5556030273438)
+                   
+                    if (position > 708.888916015625 && position < 1426.666748046875)
                         countAnimationNumber(`#${item.id}`, parseInt(item.getAttribute('data-qtd')))
+
                 });
 
             });
