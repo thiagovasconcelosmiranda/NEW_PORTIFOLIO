@@ -29,14 +29,14 @@
         .upper {
             top: -25px;
             left: 0;
-            background: #2da2ff;
+            background: $red;
             animation: upper 1s infinite;
         }
 
-         @keyframes upper {
+        @keyframes upper {
 
             50%,
-            100% {
+            100% { 
                 top: 25px;
             }
         }
@@ -44,11 +44,11 @@
         .right {
             bottom: 0;
             right: -25px;
-            background: #ff337a;
+            background: $red;
             animation: right 1s infinite;
         }
 
-         @keyframes right {
+        @keyframes right {
 
             50%,
             100% {
@@ -59,10 +59,11 @@
         .lower {
             bottom: -25px;
             right: 0;
-            background: #fff000;
+            background: $red;
             animation: lower 1s infinite;
         }
-         @keyframes lower {
+
+        @keyframes lower {
 
             50%,
             100% {
@@ -73,7 +74,7 @@
         .left {
             bottom: 0;
             left: -25px;
-            background: #00ff00;
+            background: $red;
             animation: left 1s infinite;
         }
 

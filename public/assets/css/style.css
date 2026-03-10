@@ -1350,7 +1350,7 @@ footer p {
 .container-load .reload .upper {
   top: -25px;
   left: 0;
-  background: #2da2ff;
+  background: rgb(192, 14, 14);
   animation: upper 1s infinite;
 }
 @keyframes upper {
@@ -1361,7 +1361,7 @@ footer p {
 .container-load .reload .right {
   bottom: 0;
   right: -25px;
-  background: #ff337a;
+  background: rgb(192, 14, 14);
   animation: right 1s infinite;
 }
 @keyframes right {
@@ -1372,7 +1372,7 @@ footer p {
 .container-load .reload .lower {
   bottom: -25px;
   right: 0;
-  background: #fff000;
+  background: rgb(192, 14, 14);
   animation: lower 1s infinite;
 }
 @keyframes lower {
@@ -1383,7 +1383,7 @@ footer p {
 .container-load .reload .left {
   bottom: 0;
   left: -25px;
-  background: #00ff00;
+  background: rgb(192, 14, 14);
   animation: left 1s infinite;
 }
 @keyframes left {
