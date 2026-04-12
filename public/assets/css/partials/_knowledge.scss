@@ -137,3 +137,16 @@
         }
     }
 }
+
+@media (max-width: $width1) {
+    .knowledge-group {
+    gap: 20px;
+    padding: 10px 20px;
+    margin-top: 10%;
+
+    .knowledge-item {
+        justify-content: center;
+        align-items: center;   
+    }
+}
+}

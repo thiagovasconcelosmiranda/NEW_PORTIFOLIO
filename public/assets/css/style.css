@@ -174,7 +174,7 @@ header .nav-item {
   display: flex;
   flex-direction: column;
   left: 0;
-  z-index: 20;
+  z-index: 23 !important;
 }
 header .nav-item .image-user {
   width: 53%;
@@ -997,6 +997,17 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   border-color: rgb(192, 14, 14);
 }
 
+@media (max-width: 700px) {
+  .knowledge-group {
+    gap: 20px;
+    padding: 10px 20px;
+    margin-top: 10%;
+  }
+  .knowledge-group .knowledge-item {
+    justify-content: center;
+    align-items: center;
+  }
+}
 .modal {
   width: 100%;
   height: 100%;
