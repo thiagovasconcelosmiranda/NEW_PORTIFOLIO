@@ -1346,6 +1346,13 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
     gap: 30px;
     background: transparent;
   }
+  .video-body {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 footer {
   height: 200px;
