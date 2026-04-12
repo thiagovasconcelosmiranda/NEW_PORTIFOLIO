@@ -132,7 +132,7 @@
 
             const sliders = document.createElement('div');
             sliders.classList.add('sliders');
-            
+
             sliders.style.transition = "none";
 
             setTimeout(() => {

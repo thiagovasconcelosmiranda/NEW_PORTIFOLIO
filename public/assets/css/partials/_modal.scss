@@ -191,7 +191,7 @@
 }
 
 
-@media (min-width: 700px) and (max-width: 1350px) {
+@media (min-width: $width1) and (max-width: $width2) {
   .project-body {
     width: 90%;
     height: auto;
@@ -289,7 +289,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: $width1) {
   .modal {
     align-items: baseline;
   }

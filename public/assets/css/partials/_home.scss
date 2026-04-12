@@ -1,7 +1,6 @@
 main {
     position: relative;
 
-
     .banner {
         overflow: hidden;
         position: relative;
@@ -170,23 +169,28 @@ main {
                 }
             }
         }
-        .user-info-cards{
+
+        .user-info-cards {
             width: 80%;
             margin: auto;
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
             gap: 30px;
             padding: 50px 0;
-        
-            .card-item{
+
+            .card-item {
                 padding-right: 20px;
                 border-right: 1px solid $gray;
-                h3{
+
+                h3 {
                     font-size: 20px;
                     color: $white;
 
                 }
-               .number, span{
+
+                .number,
+                span {
                     text-align: center;
                     font-size: 60px;
                     color: $gray;
@@ -277,20 +281,15 @@ main {
                         align-items: center;
                         gap: 10px;
 
-                        i,
                         h3 {
                             font-weight: 400;
                             color: $white;
-                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            font-family: Arial, Helvetica, sans-serif;
                         }
 
                         i {
                             font-size: 25px;
                             color: $red;
-                        }
-
-                        h3 {
-                            font-family: Arial, Helvetica, sans-serif;
                         }
                     }
 
@@ -321,7 +320,7 @@ main {
 }
 
 
-@media(max-width: 800px) {
+@media(max-width: $width1) {
     body {
         .banner {
             .banner-info {
@@ -354,15 +353,66 @@ main {
                 max-width: 100%;
             }
 
+            .contact {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .contact-item {
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    h1 {
+                        color: $white;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                    }
+
+                    address {
+                        width: auto;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+
+                        .contact-group {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+
+                            h3 {
+                                font-weight: 400;
+                                color: $white;
+                            }
+
+                        }
+
+                        .social-group {
+
+                            .social {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                gap: 20px;
+
+                                .social-link {
+                                    a i {
+                                        color: rgb(207, 206, 206);
+                                        font-size: 25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
         }
 
-
-
-        .contact {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
     }
 }

@@ -26,8 +26,6 @@ a {
 .row {
     width: 100%;
     display: flex;
-
-    .col {}
 }
 strong{
     color: $red;
@@ -123,7 +121,8 @@ strong{
 }
 
 
-@media(min-width: 700px) and (max-width: 1150px) {
+@media(min-width: $width1) and (max-width: $width2) {
+    
     .container {
         width: 100%;
     }
@@ -135,10 +134,13 @@ strong{
             width: 100%;
         }
     }
+          
 }
+  
 
 
-@media(max-width: 700px) {
+@media(max-width: $width1) {
+    
     .container {
         width: 100%;
     }

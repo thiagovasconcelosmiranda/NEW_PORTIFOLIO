@@ -99,7 +99,15 @@
     }
 }
 
-@media (min-width: 700px) and (max-width: 1350px) {
+@media (min-width: $width1) and (max-width: $width2) {
+     .projects {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        background-color: #000;
+        display: flex;
+        flex-wrap: wrap;
+    }
     .buttons {
         width: 100%;
         padding: 30px 0;
@@ -131,7 +139,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: $width1) {
     .buttons {
         width: 100%;
         display: flex;

@@ -58,6 +58,7 @@ a {
   width: 100%;
   display: flex;
 }
+
 strong {
   color: rgb(192, 14, 14);
 }
@@ -285,9 +286,11 @@ header .nav-item #check-option:checked + label span:nth-child(3) {
   header .nav-item {
     width: 100%;
     height: auto;
-    position: relative;
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     flex-direction: row;
     padding: 0 10px;
@@ -301,7 +304,7 @@ header .nav-item #check-option:checked + label span:nth-child(3) {
   header .nav-item nav .active-option {
     width: 100%;
     height: auto;
-    position: fixed;
+    position: absolute;
     top: 100%;
     left: 0;
     display: flex;
@@ -336,11 +339,8 @@ header .nav-item #check-option:checked + label span:nth-child(3) {
   header .nav-item .option {
     display: block;
   }
-  header .banner .banner-info h1 {
-    font-size: 35px;
-  }
 }
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   header .nav-item {
     width: 100%;
     height: auto;
@@ -545,6 +545,7 @@ main .pag-item .user-info-cards {
   width: 80%;
   margin: auto;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   padding: 50px 0;
@@ -557,7 +558,8 @@ main .pag-item .user-info-cards .card-item h3 {
   font-size: 20px;
   color: #fff;
 }
-main .pag-item .user-info-cards .card-item .number, main .pag-item .user-info-cards .card-item span {
+main .pag-item .user-info-cards .card-item .number,
+main .pag-item .user-info-cards .card-item span {
   text-align: center;
   font-size: 60px;
   color: gray;
@@ -630,18 +632,14 @@ main .pag-item .contact .contact-item address .contact-group {
   align-items: center;
   gap: 10px;
 }
-main .pag-item .contact .contact-item address .contact-group i,
 main .pag-item .contact .contact-item address .contact-group h3 {
   font-weight: 400;
   color: #fff;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 main .pag-item .contact .contact-item address .contact-group i {
   font-size: 25px;
   color: rgb(192, 14, 14);
-}
-main .pag-item .contact .contact-item address .contact-group h3 {
-  font-family: Arial, Helvetica, sans-serif;
 }
 main .pag-item .contact .contact-item address .social-group h1 {
   padding: 10px 0;
@@ -658,7 +656,7 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   font-size: 25px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   body .banner .banner-info h1 {
     font-size: 35px;
   }
@@ -679,11 +677,49 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   body .pag-item .info-user .user-description {
     max-width: 100%;
   }
-  body .contact {
+  body .pag-item .contact {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+  body .pag-item .contact .contact-item {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body .pag-item .contact .contact-item h1 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  body .pag-item .contact .contact-item address {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  body .pag-item .contact .contact-item address .contact-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  body .pag-item .contact .contact-item address .contact-group h3 {
+    font-weight: 400;
+    color: #fff;
+  }
+  body .pag-item .contact .contact-item address .social-group .social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  body .pag-item .contact .contact-item address .social-group .social .social-link a i {
+    color: rgb(207, 206, 206);
+    font-size: 25px;
   }
 }
 .buttons {
@@ -772,7 +808,15 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   transform: scale(1.1);
 }
 
-@media (min-width: 700px) and (max-width: 1350px) {
+@media (min-width: 700px) and (max-width: 1150px) {
+  .projects {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+  }
   .buttons {
     width: 100%;
     padding: 30px 0;
@@ -1122,7 +1166,7 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   height: 100%;
 }
 
-@media (min-width: 700px) and (max-width: 1350px) {
+@media (min-width: 700px) and (max-width: 1150px) {
   .project-body {
     width: 90%;
     height: auto;

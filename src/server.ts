@@ -5,6 +5,7 @@ import path from 'path';
 import mustache from 'mustache-express';
 import { router } from './routers/router';
 
+dotenv.config();
 
 const app = express();
 
@@ -20,4 +21,4 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(router);
 app.use(express.urlencoded({extended: true}));
 
-app.listen(5000, () => console.log(`Link: http://localhost:${5000}`));
+app.listen(port, () => console.log(`Link: http://localhost:${port}`));
