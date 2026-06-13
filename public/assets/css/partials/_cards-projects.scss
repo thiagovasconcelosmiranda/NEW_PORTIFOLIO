@@ -33,35 +33,32 @@
 
 .projects {
     width: 100%;
-    background-color: #000;
+    min-height: 100vh;
+    padding: 10px;
     display: grid;
-    --gap: 16px;
-    --num-cols: 4;
+    --num-cols: 1;
     --row-height: 300px;
     padding: var(--gap);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
 
     .image-grid-col-2 {
-        grid-column: span 1;
+        grid-column: span 2;
     }
 
     .image-grid-row-2 {
-        grid-row: span 2;
+        grid-row: span 3;
     }
 
     .project-image {
         position: relative;
-        overflow: hidden;
-        border-radius: 10px;
-       
+        overflow: hidden;       
 
         img {
-            width: 100%;
+            width: 105%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
             transition: 0.8s;
             cursor: pointer;
         }
