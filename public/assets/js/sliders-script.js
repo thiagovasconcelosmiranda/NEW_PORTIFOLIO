@@ -100,11 +100,8 @@
                 projects.forEach(item => {
 
                     if (elementId == item.id)
-
                         createElementSlider(projects, elementId);
-
                 });
-
             });
         }
 
@@ -227,7 +224,7 @@
                     a2.href = item.github;
                     a2.setAttribute('target', '__blank');
                     buttonLink.appendChild(a2);
-                    a2.innerHTML = 'Acessar no github';
+                    a2.innerHTML = 'GitHub';
                 }
 
                 if (item.video != '') {

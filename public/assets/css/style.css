@@ -1133,6 +1133,7 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   width: 100%;
   margin-top: 20px;
   height: auto;
+  padding: 5px;
 }
 .project-body .display-slider .sliders .slider-group .info-project .project-description .protect-icons {
   width: 100%;
@@ -1153,7 +1154,7 @@ main .pag-item .contact .contact-item address .social-group .social .social-link
   font-size: 30px;
 }
 .project-body .display-slider .sliders .slider-group .info-project .project-description p {
-  max-width: 100%;
+  max-width: 90%;
   color: #fff;
 }
 .project-body .display-slider .sliders .slider-group .info-project .project-description .button-link {
